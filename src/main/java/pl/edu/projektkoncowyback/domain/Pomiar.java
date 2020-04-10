@@ -1,9 +1,14 @@
 package pl.edu.projektkoncowyback.domain;
 
+import javax.persistence.*;
 import java.util.Date;
-
+@Entity
+@Table(name="pomiary")
 public class Pomiar {
-    private Integer id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
+
     private Date data;
     private Long Temperatura;
     private Long Wilgotnosc;
