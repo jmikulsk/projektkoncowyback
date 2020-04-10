@@ -10,8 +10,8 @@ public class Pomiar {
     @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
 
     private Date data;
-    private Long Temperatura;
-    private Long Wilgotnosc;
+    private Long temperatura;
+    private Long wilgotnosc;
     private String info;
 
     public String getInfo() {
@@ -39,18 +39,18 @@ public class Pomiar {
     }
 
     public Long getTemperatura() {
-        return Temperatura;
+        return temperatura;
     }
 
     public void setTemperatura(Long temperatura) {
-        Temperatura = temperatura;
+        temperatura = temperatura;
     }
 
     public Long getWilgotnosc() {
-        return Wilgotnosc;
+        return wilgotnosc;
     }
 
     public void setWilgotnosc(Long wilgotnosc) {
-        Wilgotnosc = wilgotnosc;
+        wilgotnosc = wilgotnosc;
     }
 }
