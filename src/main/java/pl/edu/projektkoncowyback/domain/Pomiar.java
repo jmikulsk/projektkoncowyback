@@ -1,6 +1,7 @@
 package pl.edu.projektkoncowyback.domain;
 
 import javax.persistence.*;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -13,9 +14,9 @@ public class Pomiar {
     @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
 
 
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-    LocalDateTime today = LocalDateTime.now();
-    private String data  =formatter.format(today);
+    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private Date tymczasowa = new Date();
+	private String data = dateFormat.format(tymczasowa);
 
     private Long temperatura;
     private Long wilgotnosc;
