@@ -9,11 +9,7 @@ public class Pomiar {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
 
-
-//    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-//    private Date tymczasowa = new Date();
-//	private String data = dateFormat.format(tymczasowa);
-private String data;
+    private String data;
     private Integer temperatura;
     private Integer wilgotnosc;
     private String info;
@@ -46,7 +42,7 @@ private String data;
         return temperatura;
     }
 
-    public void setTemperatura(int temperatura) {
+    public void setTemperatura(Integer temperatura) {
         temperatura = temperatura;
     }
 
@@ -54,7 +50,7 @@ private String data;
         return wilgotnosc;
     }
 
-    public void setWilgotnosc(int wilgotnosc) {
+    public void setWilgotnosc(Integer wilgotnosc) {
         wilgotnosc = wilgotnosc;
     }
 }
