@@ -11,8 +11,8 @@ public class Pomiar {
     Integer id;
 
     private String data;
-    private Long temperatura;
-    private Long wilgotnosc;
+    private float temperatura;
+    private float wilgotnosc;
 
     public Integer getId() {
         return id;
@@ -30,30 +30,19 @@ public class Pomiar {
         this.data = data;
     }
 
-    public Long getTemperatura() {
+    public float getTemperatura() {
         return temperatura;
     }
 
-    public void setTemperatura(Long temperatura) {
+    public void setTemperatura(float temperatura) {
         this.temperatura = temperatura;
     }
 
-    public Long getWilgotnosc() {
+    public float getWilgotnosc() {
         return wilgotnosc;
     }
 
-    public void setWilgotnosc(Long wilgotnosc) {
+    public void setWilgotnosc(float wilgotnosc) {
         this.wilgotnosc = wilgotnosc;
     }
-
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
-
-    private String info;
-
 }
