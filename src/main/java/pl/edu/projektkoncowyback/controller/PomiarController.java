@@ -6,7 +6,7 @@ import pl.edu.projektkoncowyback.dao.PomiarDao;
 import pl.edu.projektkoncowyback.domain.Pomiar;
 
 import java.util.List;
-u
+
 @RestController
 @RequestMapping("api")
 @CrossOrigin
