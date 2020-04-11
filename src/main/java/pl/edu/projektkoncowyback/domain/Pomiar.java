@@ -1,6 +1,9 @@
 package pl.edu.projektkoncowyback.domain;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 @Entity
 @Table(name="pomiary")
@@ -9,7 +12,11 @@ public class Pomiar {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
 
-    private Date data;
+
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+    LocalDateTime today = LocalDateTime.now();
+    private String data  =formatter.format(today);
+
     private Long temperatura;
     private Long wilgotnosc;
     private String info;
