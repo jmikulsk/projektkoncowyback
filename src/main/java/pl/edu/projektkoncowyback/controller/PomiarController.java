@@ -25,6 +25,7 @@ public class PomiarController {
     @PostMapping("pomiary/zapisz")
     public void saveProduct(@RequestBody Pomiar pomiar) {
         pomiarDao.save(pomiar);
+        System.out.println(pomiarDao);
     }
 
     @GetMapping("pomiary/single/{id}")
