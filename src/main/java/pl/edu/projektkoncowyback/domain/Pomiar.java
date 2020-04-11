@@ -1,11 +1,7 @@
 package pl.edu.projektkoncowyback.domain;
 
 import javax.persistence.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
+
 @Entity
 @Table(name="pomiary")
 public class Pomiar {
@@ -18,8 +14,8 @@ public class Pomiar {
 //    private Date tymczasowa = new Date();
 //	private String data = dateFormat.format(tymczasowa);
 private String data;
-    private long temperatura;
-    private long wilgotnosc;
+    private Integer temperatura;
+    private Integer wilgotnosc;
     private String info;
 
     public String getInfo() {
@@ -46,7 +42,7 @@ private String data;
         this.data = data;
     }
 
-    public long getTemperatura() {
+    public Integer getTemperatura() {
         return temperatura;
     }
 
@@ -54,7 +50,7 @@ private String data;
         temperatura = temperatura;
     }
 
-    public long getWilgotnosc() {
+    public Integer getWilgotnosc() {
         return wilgotnosc;
     }
 
