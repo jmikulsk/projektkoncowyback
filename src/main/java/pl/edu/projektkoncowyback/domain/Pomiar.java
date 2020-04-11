@@ -41,7 +41,7 @@ public class Pomiar {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
