@@ -14,8 +14,8 @@ public class Pomiar {
 //    private Date tymczasowa = new Date();
 //	private String data = dateFormat.format(tymczasowa);
 private String data;
-    private Integer temperatura;
-    private Integer wilgotnosc;
+    private int temperatura;
+    private int wilgotnosc;
     private String info;
 
     public String getInfo() {
@@ -42,7 +42,7 @@ private String data;
         this.data = data;
     }
 
-    public Integer getTemperatura() {
+    public int getTemperatura() {
         return temperatura;
     }
 
@@ -50,7 +50,7 @@ private String data;
         temperatura = temperatura;
     }
 
-    public Integer getWilgotnosc() {
+    public int getWilgotnosc() {
         return wilgotnosc;
     }
 
