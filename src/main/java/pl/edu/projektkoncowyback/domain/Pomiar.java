@@ -7,20 +7,14 @@ import javax.persistence.*;
 public class Pomiar {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer id;
 
     private String data;
     private Integer temperatura;
     private Integer wilgotnosc;
     private String info;
 
-    public String getInfo() {
-        return info;
-    }
-
-    public void setInfo(String info) {
-        this.info = info;
-    }
 
     public Integer getId() {
         return id;
@@ -43,7 +37,7 @@ public class Pomiar {
     }
 
     public void setTemperatura(Integer temperatura) {
-        temperatura = temperatura;
+        this.temperatura = temperatura;
     }
 
     public Integer getWilgotnosc() {
@@ -51,6 +45,14 @@ public class Pomiar {
     }
 
     public void setWilgotnosc(Integer wilgotnosc) {
-        wilgotnosc = wilgotnosc;
+        this.wilgotnosc = wilgotnosc;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
     }
 }
