@@ -13,11 +13,11 @@ public class Pomiar {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) Integer id;
 
-
-    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-    private Date tymczasowa = new Date();
-	private String data = dateFormat.format(tymczasowa);
-
+//
+//    DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+//    private Date tymczasowa = new Date();
+//	private String data = dateFormat.format(tymczasowa);
+private String data;
     private Long temperatura;
     private Long wilgotnosc;
     private String info;
