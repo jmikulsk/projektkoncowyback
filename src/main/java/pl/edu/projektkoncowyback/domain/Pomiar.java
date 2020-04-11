@@ -37,7 +37,7 @@ public class Pomiar {
         this.id = id;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
 
